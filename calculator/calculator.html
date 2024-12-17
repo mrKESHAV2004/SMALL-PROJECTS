@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .btn{
+                width: 50px;
+                height: 50px;
+                font-size:20px;
+                background-color: rgb(63, 208, 63);
+                border: none;
+            }
+            .input{
+                font-size: 20px;
+                color: white;
+                background-color: rgb(53, 53, 53);
+                border-radius: 10px; ;
+            }
+            .btns>*{
+                margin:10px;
+                border-radius: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .ans{
+                text-align: center;
+                width:200px;
+            }
+            input{
+                width: 170px;
+                border-radius: 6px;
+                padding: 2px;
+            }
+            .btn:hover{
+                transform: scale(1.1);
+                color: white;
+                background-color: green;
+                cursor: pointer;
+            }
+            .container{
+                background-color: black;width: fit-content;padding: 20px;border-radius: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <table cellspacing="10px">
+                    <tr>
+                        <td><label for="n1">Number 1</label></td>
+                        <td><input type="number" name="n1" id="n1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="n2">Number 2</label></td>
+                        <td><input type="number" name="n2" id="n2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ang">Angle</label></td>
+                        <td><input type="number" name="angle" id="angle"></td>
+                    </tr>
+                    <tr>
+                        <td><label>ANS</label></td>
+                        <td><label id="ans" name="ans" class="ans"></label></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btns" style="display: flex-box; width: 300px; gap:20px">
+                <button class="btn" onclick="add()">+</button>
+                <button class="btn" onclick="sub()">-</button>
+                <button class="btn" onclick="multi()">x</button>
+                <button class="btn" onclick="divide()">/</button>
+                <button class="btn" onclick="sqrt()">x<sup>1/2</sup></button>
+                <button class="btn" onclick="cubert()">x<sup>1/3</sup></button>
+                <button class="btn" onclick="square()">x<sup>2</sup></button>
+                <button class="btn" onclick="cube()">x<sup>3</sup></button>
+                <button class="btn" onclick="sin()">sin</button>
+                <button class="btn" onclick="cos()">cos</button>
+                <button class="btn" onclick="tan()">tan</button>
+                <button class="btn" onclick="log()">log</button>
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+    </html>
